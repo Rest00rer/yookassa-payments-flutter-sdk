@@ -2,7 +2,13 @@
 
     <queries>
         <package android:name="ru.sberbankmobile_alpha" />
+        <package android:name="ru.sberbankmobile" />
         <package android:name="ru.yoo.money.debug" />
+        <package android:name="ru.yoo.money" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
     </queries>
 
 </manifest>
