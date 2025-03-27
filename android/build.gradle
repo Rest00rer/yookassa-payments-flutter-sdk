@@ -53,8 +53,14 @@ android {
     }
 }
 
+repositories {
+    mavenLocal()
+    google()
+    mavenCentral()
+}
+
 dependencies {
-    implementation 'com.github.Rest00rer:yookassa-android-sdk:master-SNAPSHOT'
+    implementation 'com.github.Rest00rer:yookassa-android-sdk:main'
 }
 
 configurations.implementation {
