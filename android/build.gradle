@@ -61,7 +61,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.Rest00rer:yookassa-android-sdk:master'
+    implementation 'com.github.Rest00rer:yookassa-android-sdk:10763cacb27af8394d8d434f259e81586e67c8da'
 }
 
 configurations.implementation {
