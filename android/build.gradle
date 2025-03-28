@@ -3,9 +3,12 @@ group 'ru.yoomoney.sdk.kassa.payments.flutter'
 buildscript {
     ext.kotlin_version = '1.9.22'
     repositories {
+        // Удаляем или комментируем ссылки на внутренние репозитории
+        // maven { url 'https://nexus.yooteam.ru/repository/maven-public/' }
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+        maven { url 'https://developer.huawei.com/repo/' }
     }
 
     dependencies {
@@ -16,9 +19,12 @@ buildscript {
 
 rootProject.allprojects {
     repositories {
+        // Удаляем или комментируем ссылки на внутренние репозитории
+        // maven { url 'https://nexus.yooteam.ru/repository/maven-public/' }
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+        maven { url 'https://developer.huawei.com/repo/' }
     }
 }
 
@@ -58,10 +64,11 @@ repositories {
     google()
     mavenCentral()
     maven { url 'https://jitpack.io' }
+    maven { url 'https://developer.huawei.com/repo/' }
 }
 
 dependencies {
-    implementation 'com.github.Rest00rer:yookassa-android-sdk:10763cacb27af8394d8d434f259e81586e67c8da'
+    implementation 'ru.yoomoney.sdk.kassa.payments:yookassa-android-sdk:7.0.2'
 }
 
 configurations.implementation {
