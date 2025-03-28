@@ -57,10 +57,11 @@ repositories {
     mavenLocal()
     google()
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    implementation 'com.github.Rest00rer:yookassa-android-sdk:main'
+    implementation 'com.github.Rest00rer:yookassa-android-sdk:master'
 }
 
 configurations.implementation {
